@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom";
+import CurrencyRates from "./CurrencyRates";
 import { useFinance } from "../context/FinanceContext";
+
 
 function StatCard({ title, amount, description, icon, type }) {
   return (
@@ -116,6 +118,7 @@ export default function Dashboard() {
 
       {/* Main Dashboard */}
       <div className="dashboard-grid">
+        <CurrencyRates />
 
         {/* Spending by Category */}
         <section className="panel">
